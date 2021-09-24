@@ -1,0 +1,20 @@
+<h1><%= @restaurant.name %> edit </h1>
+
+<%= form_for(@restaurant) do |f| %>
+  <label>Restaurant name:</label><br>
+  <%= f.text_field :name %><br>
+
+  <label>Restaurant city:</label><br>
+  <%= f.text_field :city %><br>
+  
+  <label>Restaurant star rating:</label><br>
+  <%= f.number_field :star_rating %><br>
+
+  <label>Restaurant description:</label><br>
+  <%= f.text_field :description %><br>
+
+  <label>Restaurant cuisine:</label><br>
+  <%= f.text_field :cuisine %><br>
+  
+  <%= f.submit %>
+<% end %>
